@@ -6,13 +6,55 @@
   font-weight: 400;
   font-style: normal;
 }
-
-/* Header styles */
-.banner-title{
+/* shared styles */
+.display-flex{
     display: flex;
 }
-.nav-title{
-    display: flex;
-    justify-content: space-around;
+
+.white{
+    color: rgba(255, 255, 255, 1);
+}
+.white-2{
+    color: rgba(255, 255, 255, 0.5)
+}
+.bg-primary{
+    background-color: rgba(17, 17, 17, 1)
+}
+.text-orange{
+    color: #E6533C;
+    font-weight: 800;
+}
+.button-color{
+    background-color: #E6533C;
+}
+/* Header styles */
+
+
+/* navbar styles */
+.navbar{
+    justify-content: space-between;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 47px;
+}
+.nav-link{
+    text-decoration: none;
+    margin-left: 0px;
+}
+.nav-links{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    list-style: none;
+    align-items: center;
+}
+.home-btn{
+    border: none;
+    border-radius: 46px;
+    padding: 8px 20px;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
