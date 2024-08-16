@@ -328,6 +328,28 @@
     padding-left: 1.25rem;
 }
 /* footer start */
+.last{
+    background-color: rgb(34, 34, 34);
+    display: grid;
+    grid-template-columns: 2fr repeat(2,1fr);
+    padding: 1.5rem;
+}
+.footer1{
+    margin:  2rem;
+    /* width: 100%;
+    max-width: 1059px;
+    max-height: 239px; */
+}
+.footer-2, .footer-3{
+    text-align: left;
+}
+.l-items{
+    list-style: none;
+}
+.title-white{
+    font-size: 2rem;
+}
+
 /* -----------------------------------------responsive style for all section------------------------------------------ */
 @media screen and (max-width : 576px) {
     .burger-menu {
@@ -439,5 +461,17 @@
     .team-pic-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .trainer-pic-3,
+    .trainer-pic-4,
+    .trainer-pic-5,
+    .trainer-pic-6{
+        display: none;
+    }
+    .last{
+        /* flex-direction: column; */
+        grid-template-columns:repeat(1,1fr);
+        margin-bottom: -40rem;
+        text-align: center ;
     }
 }
