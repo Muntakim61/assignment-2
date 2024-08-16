@@ -12,7 +12,7 @@
     font-style: normal;
 }
   
-/* shared styles */
+/* -------------------------------------------------shared styles --------------------------------------------------------*/
 .display-flex{
     display: flex;
 }
@@ -21,7 +21,7 @@
     color: rgba(255, 255, 255, 1);
 }
 .white-2{
-    color: rgba(255, 255, 255, 0.4)
+    color: rgba(255, 255, 255, 0.4);
 }
 .bg-primary{
     background-color: rgba(17, 17, 17, 1)
@@ -33,10 +33,13 @@
 .button-color{
     background-color: #E6533C;
 }
+.optional-banner-btn{
+    display: none;
+}
 /* Header styles */
 
 
-/* navbar styles */
+/*------------------------------------------------------------- navbar styles---------------------------------------------- */
 .navbar{
     justify-content: space-between;
 }
@@ -67,12 +70,19 @@
     max-width: 1440px;
     margin: 0 auto;
 }
-/* banner styles */
+
+.burger-menu {
+    display: none;
+    font-size: 24px;
+}
+
+/* ------------------------------------------------------banner styles ----------------------------------------------------*/
 .banner-btn-1{ 
     padding : 1rem 2.9rem;
     border: none;
     border-radius: 42px;
     font-weight: 600;
+    font-size: 1.1rem;
     margin-right: 14px;
 }
 .banner-btn-2{ 
@@ -80,6 +90,7 @@
     border: 1px solid white;
     border-radius: 42px;
     font-weight: 600;
+    font-size: 1.1rem;
     background-color: rgba(17, 17, 17, 1);
 }
 .banner-title{
@@ -90,6 +101,129 @@
     max-width: 599px;
     margin-right: 5.5rem;
 }
+.image-container {
+    width: 100%; 
+    max-width: 100%; 
+    overflow: hidden; 
+    text-align: center;
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 .banner-btn{
     margin-top: 28px;
 }
+.banner-video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ffffff1a;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 13rem;
+    height: 6rem;
+    margin-top: 27rem;
+    margin-left: -27rem;
+    gap: 1rem;
+}
+.circle{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 20px;
+    background-color: #E6533C;
+    margin-left: 1.44rem;
+    border: none;
+}
+.vid-desc{
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.vid-desc-2{
+   margin-bottom: 1rem;
+}
+.free-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff1a;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 13rem;
+    height: 6rem;
+    margin-top: 7rem;
+    margin-left: 6rem;
+}
+.free{
+    font-size: 2.5rem;
+    margin: 1rem 0 0 0;
+    font-weight: 900;
+}
+/* -----------------------------------------------media styles for small devices------------------------------------------------ */
+@media screen and (max-width: 576px){
+    .burger-menu {
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .brand{
+        margin-left: 20px;
+    }
+    .banner{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-btn{
+        display: none;
+    }
+    .optional-banner-btn{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .optional-btn-1{
+        padding : 1.2rem 3.2rem;
+        border: none;
+        border-radius: 42px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-right: 0.9rem;
+    }
+    .optional-btn-2{
+            padding : 1.2rem 2.9rem;
+            border: 1px solid white;
+            border-radius: 42px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            background-color: rgba(17, 17, 17, 1);
+            margin-right: -6rem;
+    }
+    .banner-video{
+        margin-top: -7rem;
+        margin-left: 2rem;
+    }
+    .free-video{
+        margin-top: -33rem;
+        margin-left: 17rem;
+    }
+    .navbar, .banner{
+        width: 100%;
+    }
+    .img-container{
+        width: 100%;
+        max-width: 576px;
+        height: auto;
+    }
+}
+/* --------------------------------------------------------------------------------------------------- */
