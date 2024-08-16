@@ -38,6 +38,12 @@
 .optional-banner-btn{
     display: none;
 }
+.gray-bg{
+    background-color: rgba(34, 34, 34, 1);
+}
+.gray-bg-light{
+    background-color: rgb(59, 55, 55);
+}
 /* Header styles */
 
 
@@ -170,8 +176,136 @@
     margin: 1rem 0 0 0;
     font-weight: 900;
 }
-/* -----------------------------------------------media styles for small devices------------------------------------------------ */
-@media screen and (max-width: 576px){
+/* ----------------------------------main body part 1------------------------------------------------ */
+.habit{
+    flex-direction: column;
+    margin: 13.2rem 12.6rem 0rem 12.2rem;
+    max-width: 1044px;
+    max-height: 452px;
+}
+.habit-title{
+    font-weight: 900;
+    font-size: 3rem;
+}
+.habit-desc{
+    font-size: 1.12rem;
+}
+.habit-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.6rem;
+}
+.habit-pic{
+    gap: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.habit-pic img{
+    border-radius: 90px;
+}
+.part-1, .part-2, .part-3, .part-4{
+    width: 100%;
+    height: 100%;
+    max-width: 231px;
+    max-height: 271px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* ----------------------------------run section-----------------------------------------------------*/
+.run{
+    margin-left: 12.5rem;
+    margin-top: 9rem;
+    padding: 2.5rem 3.3rem;
+    max-width: 920px;
+    max-height: 341px;
+    align-items: center;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+}
+.run-part{
+    max-width: 443px;
+    max-height: 290px;
+    margin-right: 12.2rem;
+}
+.run-title{
+    font-size: 3rem 11.9rem;
+}
+.run-btn{
+    color: white;
+        padding : 1.2rem 3.2rem;
+        border: none;
+        border-radius: 42px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-right: 0.9rem;
+}
+.run-img img{
+    max-width: 366px;
+    max-height: 312px;
+    border-radius: 18px;
+}
+
+/*------------------------------------------------------bmi part 1-------------------------------------------------- */
+.bmi-1{
+    margin: 5.5rem 24rem;
+}
+.bmi-head{
+    font-weight: 900;
+    font-size: 3rem;
+}
+/* ----------------------------------------------------bmi part 2----------------------------------------------------- */
+.bmi-title{
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+.bmi-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bmi-form{
+    gap: 0.75rem;
+}
+.table-data{
+    padding: 0.9rem 1.25rem;
+}
+.bmi-desc{
+    max-width: 577px;
+    max-height: 377px;
+}
+.bmi-input{
+    padding: 0.8rem 0 0.8rem 1.25rem;
+    font-weight: 600;
+    margin-right: 0.75rem;
+    margin-bottom: 0.4rem;
+    border: 1px solid black;
+    /* color: white; */
+}
+.bmi-gender{
+    width: 12.38rem;
+}
+.bmi-activity{
+    width: 25.68rem;
+}
+.calc-btn{
+        color: white;
+        padding : 0.8rem 2.7rem;
+        border: none;
+        border-radius: 42px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-right: 0.9rem;
+}
+/* ------------------------------------------team------------------------------------------------------ */
+
+/* -----------------------------------------responsive style for all section------------------------------------------ */
+@media screen and (max-width : 576px) {
     .burger-menu {
         display: block;
         margin-right: 20px;
@@ -231,49 +365,6 @@
         max-width: 576px;
         height: auto;
     }
-}
-/* ----------------------------------main body part 1------------------------------------------------ */
-.habit{
-    flex-direction: column;
-    margin: 13.2rem 12.6rem 0rem 12.2rem;
-    max-width: 1044px;
-    max-height: 452px;
-}
-.habit-title{
-    font-weight: 900;
-    font-size: 3rem;
-}
-.habit-desc{
-    font-size: 1.12rem;
-}
-.habit-head{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3.6rem;
-}
-.habit-pic{
-    gap: 2.5rem;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-.habit-pic img{
-    border-radius: 90px;
-}
-.part-1, .part-2, .part-3, .part-4{
-    width: 100%;
-    height: 100%;
-    max-width: 231px;
-    max-height: 271px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    /* justify-content: center; */
-    align-items: center;
-}
-/* -----------------------------------------responsive style for main section------------------------------------------ */
-@media screen and (max-width : 576px) {
     .habit{
         flex-direction: column;
         margin: 25rem 0 0 0;
@@ -286,43 +377,6 @@
         grid-template-columns: repeat(1,1fr);
         margin: 0 auto;
     }
-}
-/* ----------------------------------run section-----------------------------------------------------*/
-.run{
-    margin-left: 12.5rem;
-    margin-top: 9rem;
-    padding: 2.5rem 3.3rem;
-    max-width: 920px;
-    max-height: 341px;
-    align-items: center;
-    border-radius: 18px;
-    background: rgb(34, 34, 34);
-    display: flex;
-}
-.run-part{
-    max-width: 443px;
-    max-height: 290px;
-    margin-right: 12.2rem;
-}
-.run-title{
-    font-size: 3rem 11.9rem;
-}
-.run-btn{
-    color: white;
-        padding : 1.2rem 3.2rem;
-        border: none;
-        border-radius: 42px;
-        font-weight: 600;
-        font-size: 1.1rem;
-        margin-right: 0.9rem;
-}
-.run-img img{
-    max-width: 366px;
-    max-height: 312px;
-    border-radius: 18px;
-}
-/* -----------------------------------------responsive style for main section------------------------------------------ */
-@media screen and (max-width : 576px) {
     .run{
         flex-direction: column;
         margin: 65rem auto;
@@ -339,20 +393,23 @@
         text-align: center;
         margin: 0;
     }
-    
-}
-/*------------------------------------------------------bmi part 1-------------------------------------------------- */
-.bmi-1{
-    margin: 5.5rem 24rem;
-}
-.bmi-head{
-    font-weight: 900;
-    font-size: 3rem;
-}
-@media screen and (max-width:576px){
     .bmi-1{
         margin: 0;
         margin-top: -64rem;
         text-align: center;
+    }
+    .bmi-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .bmi-table{
+        margin: 0 auto;
+    }
+    .bmi-calc{
+        text-align: center;
+    }
+    .bmi-input{
+        width: 100%;
+        max-width:max-content;
     }
 }

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="inter-font bg-primary">
@@ -88,11 +94,102 @@
             <div class="run-img">
                 <img src="images/run.jpg" alt="">
             </div>
-            
         </div>
         <div class="bmi-1">
             <h2 class="bmi-head white">BMI Calculator</h2>
             <p class="bmi-desc white 2">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        </div>
+        <div class="bmi-2 gray-bg">
+            <div class="bmi-table">
+                <h3 class="bmi-title white">BMI Calculator Chart</h3>
+                <table>
+                    <tr class="white">
+                        <td class="table-data">BMI</td>
+                        <td class="table-data">Weight Status</td>
+                    </tr>
+                    <tr class="white-2">
+                        <td class="table-data">Below 18.5</td>
+                        <td class="table-data">Underweight</td>
+                    </tr>
+                    <tr class="white-2">
+                        <td class="table-data">18.5 - 24.9</td>
+                        <td class="table-data">Healthy</td>
+                    </tr>
+                    <tr class="white-2">
+                        <td class="table-data">25.0 - 29.9</td>
+                        <td class="table-data">Overweight</td>
+                    </tr>
+                    <tr class="white-2">
+                        <td class="table-data">30.0 - and Above</td>
+                        <td class="table-data">Obese</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bmi-calc">
+                <h3 class="bmi-title white">Calculate your BMI</h3>
+                <p class="bmi-desc white-2">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                <div class="bmi-form">
+                    <form action="">
+                        <input class="bmi-input gray-bg-light" type="text" name="" id="" placeholder="Height/cm">
+                        <input class="bmi-input gray-bg-light"  type="text" name="" id="" placeholder="Weight/kg">
+                        <br>
+                        <input class="bmi-input gray-bg-light"  type="text" name="" id="" placeholder="Age">
+                        <select class="bmi-input bmi-gender gray-bg-light">
+                            <option value="">Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br>
+                        <select class="bmi-input bmi-activity gray-bg-light">
+                            <option value="">Select a factor</option>
+                            <option value="1">1</option>
+                            <option value="  7-8 9 10 ">2-3</option>
+                            <option value="other">4-6</option>
+                            <option value="other">7-8</option>
+                            <option value="other">9</option>
+                            <option value="other">10</option>
+                        </select><br>
+                        <button class="button-color calc-btn">Calculate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="team">
+            <h2 class="team-title">Meet Our Team</h2>
+            <p class="team-desc">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            <div class="team-pic">
+                <img class="trainer_pic" src="images/trainer1.png" alt="">
+            <div class="Jerome">
+                <h2 class="white">Jerome Bell</h2>
+                <p class="white">Trainer</p>
+            </div>
+            <img class="trainer-pic" src="images/trainer2.png" alt="">
+            <div class="Cameron">
+                <h2 class="white">Cameron Williamson</h2>
+                <p class="white">Trainer</p>
+            </div>
+            <img class="trainer-pic" src="images/trainer3.png" alt="">
+            <div class="Darrell">
+                <h2 class="white">Darrell Steward</h2>
+                <p class="white">Trainer</p>
+            </div>
+            <img class="trainer-pic" src="images/trainer4.png" alt="">
+            <div class="Dianne">
+                <h2>Dianne Russell</h2>
+                <p>Trainer</p>
+            </div>
+            <img class="trainer-pic" src="images/trainer5.png" alt="">
+            <div class="Cody">
+                <h2>Cody Fisher</h2>
+                <p>Trainer</p>
+            </div>
+            <img class="trainer-pic" src="images/trainer6.png" alt="">
+            <div class="Theresa">
+                <h2>Theresa Webb</h2>
+                <p>Trainer</p>
+            </div>
+            </div>
         </div>
     </main>
     <footer></footer>
