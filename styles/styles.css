@@ -303,7 +303,31 @@
         margin-right: 0.9rem;
 }
 /* ------------------------------------------team------------------------------------------------------ */
-
+.team-desc{
+    text-align: center;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.team-pic-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 677px;
+    max-height: 607px;
+    margin: 5rem auto;
+    gap: 1.25rem;
+}
+.team-pic-container img{
+    width: 300px;
+    height: 272px;
+    border-radius: 18px;
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+}
+/* footer start */
 /* -----------------------------------------responsive style for all section------------------------------------------ */
 @media screen and (max-width : 576px) {
     .burger-menu {
@@ -411,5 +435,9 @@
     .bmi-input{
         width: 100%;
         max-width:max-content;
+    }
+    .team-pic-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 }
