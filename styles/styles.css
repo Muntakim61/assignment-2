@@ -196,8 +196,7 @@
     .optional-banner-btn{
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
-        
+        align-items: center; 
     }
     .optional-btn-1{
         padding : 1.2rem 3.2rem;
@@ -287,4 +286,58 @@
         grid-template-columns: repeat(1,1fr);
         margin: 0 auto;
     }
+}
+/* ----------------------------------run section-----------------------------------------------------*/
+.run{
+    margin-left: 12.5rem;
+    margin-top: 9rem;
+    padding: 2.5rem 3.3rem;
+    max-width: 920px;
+    max-height: 341px;
+    align-items: center;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+}
+.run-part{
+    max-width: 443px;
+    max-height: 290px;
+    margin-right: 12.2rem;
+}
+.run-title{
+    font-size: 3rem 11.9rem;
+}
+.run-btn{
+    color: white;
+        padding : 1.2rem 3.2rem;
+        border: none;
+        border-radius: 42px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-right: 0.9rem;
+}
+.run-img img{
+    max-width: 366px;
+    max-height: 312px;
+    border-radius: 18px;
+}
+/* -----------------------------------------responsive style for main section------------------------------------------ */
+@media screen and (max-width : 576px) {
+    .run{
+        flex-direction: column;
+        margin: 65rem auto;
+        max-width: 353px;
+        max-height: 531px;
+    }
+    .run-title{
+        font-size: 2rem;
+    }
+    .run-btn{
+        margin-bottom: 2rem;
+    }
+    .run-part{
+        text-align: center;
+        margin: 0;
+    }
+    
 }
