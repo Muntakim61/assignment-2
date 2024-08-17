@@ -56,6 +56,9 @@
     list-style: none;
     margin-right: 47px;
 }
+.n-item{
+    margin-left: -2.5rem;
+}
 .brand{
     font-size: 2.25rem;
     margin: 0px;
