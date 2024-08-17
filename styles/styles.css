@@ -353,10 +353,11 @@
     padding: 1.5rem;
 }
 .footer1{
+    /* display: block; */
     margin:  2rem;
-    /* width: 100%;
+    width: 100%;
     max-width: 1059px;
-    max-height: 239px; */
+    max-height: 239px;
 }
 .footer-2, .footer-3{
     text-align: left;
@@ -499,9 +500,16 @@
         display: none;
     }
     .last{
-        /* flex-direction: column; */
-        grid-template-columns:repeat(1,1fr);
-        margin-bottom: -40rem;
-        text-align: center ;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-description{
+        position: relative;
+        top: 2rem;
+    }
+    .footer-2,.footer-3{
+        position: relative;
+        top: 2rem;
+        padding-bottom: 1rem;
     }
 }
