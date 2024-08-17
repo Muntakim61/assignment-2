@@ -168,8 +168,9 @@
     background: rgba(255, 255, 255, 0.1);
     width: 13rem;
     height: 6rem;
-    margin-top: 7rem;
-    margin-left: 6rem;
+    position: relative;
+    top: 7rem;
+    left: 6rem;
 }
 .free{
     font-size: 2.5rem;
@@ -230,6 +231,7 @@
     display: flex;
 }
 .run-part{
+    width: 100%;
     max-width: 443px;
     max-height: 290px;
     margin-right: 12.2rem;
@@ -237,8 +239,12 @@
 .run-title{
     font-size: 3rem 11.9rem;
 }
+.run-desc{
+    font-size: smaller;
+}
 .run-btn{
-    color: white;
+        /* position: relative; */
+        color: white;
         padding : 1.2rem 3.2rem;
         border: none;
         border-radius: 42px;
@@ -247,6 +253,7 @@
         margin-right: 0.9rem;
 }
 .run-img img{
+    object-fit: cover;
     max-width: 366px;
     max-height: 312px;
     border-radius: 18px;
@@ -281,7 +288,7 @@
     max-height: 377px;
 }
 .bmi-input{
-    padding: 0.8rem 0 0.8rem 1.25rem;
+    padding: .8rem 0 0.8rem 1.25rem;
     font-weight: 600;
     margin-right: 0.75rem;
     margin-bottom: 0.4rem;
@@ -310,25 +317,9 @@
 .team{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
-/* .team-pic-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    max-width: 677px;
-    max-height: 607px;
-    margin: 5rem auto;
-    gap: 1.25rem;
-}
-.team-pic-container img{
-    width: 300px;
-    height: 272px;
-    border-radius: 18px;
-    padding-top: 1.25rem;
-    padding-left: 1.25rem;
-} */
- .container{
+.container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1.5rem;
@@ -336,10 +327,10 @@
     padding: 1.5rem;
     border-radius: 18px;
     margin-bottom: 3rem;
- }
- .container img{
+}
+.container img{
     object-fit: cover;
- }
+}
 .team-line{
     position: relative;
     bottom: 5rem;
@@ -377,14 +368,17 @@
 /* -----------------------------------------responsive style for all section------------------------------------------ */
 @media screen and (max-width : 576px) {
     .burger-menu {
+        position: absolute;
         display: block;
-        margin-right: 20px;
+        right: 20px;
     }
     .nav-links{
         display: none;
     }
     .brand{
-        margin-left: 20px;
+        position: absolute;
+        /* display: block; */
+        /* right: 20px; */
     }
     .navbar{
         margin: 1.25rem;
@@ -393,6 +387,9 @@
         margin: 1.25rem;
         display: flex;
         flex-direction: column;
+    }
+    .img-container img{
+        object-fit: cover;
     }
     .banner-btn{
         display: none;
@@ -420,21 +417,24 @@
             margin-right: -6rem;
     }
     .banner-video{
-        margin-top: -7rem;
-        margin-left: 2rem;
+        position: absolute;
+        top: 26rem;
+        right: 20rem;
     }
     .free-video{
-        margin-top: -33rem;
-        margin-left: 17rem;
+        position: absolute;
+        top: 41rem;
+        left: 14rem;
     }
     .navbar, .banner{
         width: 100%;
     }
-    .img-container{
+    /* .img-container{
+
         width: 100%;
         max-width: 576px;
         height: auto;
-    }
+    } */
     .habit{
         flex-direction: column;
         margin: 25rem 0 0 0;
@@ -478,10 +478,16 @@
     .bmi-calc{
         text-align: center;
     }
-    .bmi-input{
+    .bmi-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .bmi-input{
         width: 100%;
         max-width:max-content;
-    }
+    } */
     .container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
