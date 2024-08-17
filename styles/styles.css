@@ -268,6 +268,7 @@
 .bmi-2{
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 2rem;
 }
 .bmi-form{
     gap: 0.75rem;
@@ -312,7 +313,7 @@
     /* justify-content: center; */
     align-items: center;
 }
-.team-pic-container{
+/* .team-pic-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     max-width: 677px;
@@ -326,6 +327,29 @@
     border-radius: 18px;
     padding-top: 1.25rem;
     padding-left: 1.25rem;
+} */
+ .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    background-color: rgba(72, 71, 71, 0.2);
+    padding: 1.5rem;
+    border-radius: 18px;
+    margin-bottom: 3rem;
+ }
+ .container img{
+    object-fit: cover;
+ }
+.team-line{
+    position: relative;
+    bottom: 5rem;
+    left: 1.25rem;
+}
+.team-pos{
+    position: relative;
+    bottom: 6rem;
+    left: 1.25rem;
+    font-size: smaller;
 }
 /* footer start */
 .last{
@@ -458,14 +482,11 @@
         width: 100%;
         max-width:max-content;
     }
-    .team-pic-container{
+    .container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-    .trainer-pic-3,
-    .trainer-pic-4,
-    .trainer-pic-5,
-    .trainer-pic-6{
+    .team-pic-5,.team-pic-4{
         display: none;
     }
     .last{
